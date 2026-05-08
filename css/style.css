@@ -33,6 +33,7 @@ form{
     background-color: #FEF0E6;
     padding: 20px;
     border-radius: 5px;
+    margin-bottom: 100px;
 }
 
 fieldset {
@@ -51,6 +52,11 @@ legend {
 label{
     display: block;
     margin-bottom: 5px;
+}
+
+p{
+    margin-bottom: 15px;
+    font-weight: bold;
 }
 
 input, select, textarea {
@@ -76,4 +82,31 @@ input[type="checkbox"] {
 input[type="color"]{
     width: 40px;
     padding: 0 5px;
+}
+
+input:invalid,
+select:invalid,
+textarea:invalid{
+    border-color: red;
+}
+
+input:valid,
+select:valid,
+textarea:valid{
+    border-color: green;
+}
+
+.checkbox-group input[type="checkbox"] {
+    margin: 0;
+    padding: 0; 
+    width: 16px;
+    height: 16px;
+    flex-shrink: 0;
+}
+
+.checkbox-group {
+    display: flex;
+    align-items: center;
+    gap: 4px;           
+    margin-bottom: 10px;
 }

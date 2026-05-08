@@ -177,17 +177,19 @@
                     <textarea id="comment" name="userComment" placeholder="Digite aqui sua opinião..."></textarea>
                 </fieldset>
 
-                <fieldset:>
+                <fieldset>
                     <legend>Confirmações</legend>
-                    <input type="checkbox" name="userLgpd" id="lgpd" value="accepted" required>
-                    <label for="lgpd">Li e concordo com a Política de Privacidade e aceito participar da pesquisa.</label>
-                    <br>
+                    
+                    <div class="checkbox-group">
+                        <input type="checkbox" name="userLgpd" id="lgpd" value="accepted" required>
+                        <label for="lgpd">Li e concordo com a Política de Privacidade e aceito participar da pesquisa.</label>
+                    </div>
 
-                    <input type="checkbox" name="userResults" id="results" value="accepted" >
-                    <label for="results">Desejo receber os resultados da pesquisa por email.</label>
-
-                </fieldset:>
-
+                    <div class="checkbox-group">
+                        <input type="checkbox" name="userResults" id="results" value="accepted">
+                        <label for="results">Desejo receber os resultados da pesquisa por email.</label>
+                    </div>
+                </fieldset>
             
 
             <button type="submit">Enviar</button>
